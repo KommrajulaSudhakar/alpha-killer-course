@@ -1,0 +1,16 @@
+title: ALPHA killer
+description: Alphakiller84
+template:
+  repo: alpha-killer-template
+  name: alpha-killer
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
